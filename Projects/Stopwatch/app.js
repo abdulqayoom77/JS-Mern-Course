@@ -11,8 +11,17 @@
 
 // stop watch start karte hain
 
-// var minutes = document.getElementById("minutes");
-// var seconds = document.getElementById("seconds");
-// var milliSeconds = document.getElementById("milliseconds");
+var minutes = document.getElementById("minutes");
+var seconds = document.getElementById("seconds");
+var milliSeconds = document.getElementById("milliseconds");
+var index = 0;
 
-// minutes.innerHTML = "00";
+minutes.innerText = Number("00");
+seconds.innerText = Number("00");
+
+function millisecondsBrhao(){
+    index ++
+    milliSeconds.innerText = index;
+}
+
+setInterval(milliSeconds, 1000)
