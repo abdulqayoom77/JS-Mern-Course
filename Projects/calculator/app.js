@@ -18,5 +18,4 @@ buttons.forEach(function (button) {
         }
 
     })
-
 });
