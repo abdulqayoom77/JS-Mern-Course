@@ -96,3 +96,14 @@
 //     break;
 //   }
 // }
+
+
+
+// todo list
+
+// var todoArr = ['wake up at 6am ', 'Take a cold bath']
+// var addedTodo = todoArr.unshift('kuch bhi karo', 'Khana khao');
+// todoArr.pop()
+// console.log(todoArr)
+// alert(todoArr)
+
