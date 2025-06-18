@@ -1,0 +1,5 @@
+function expandPara(){
+    var fullParagraph = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quos nam fugit iste obcaecati, eius aspernatur velit eligendi asperiores vitae, quas, enim doloribus adipisci eaque! Reiciendis qui vitae maxime velit explicabo corporis rerum ipsum delectus, repellat quisquam voluptatibus animi suscipit maiores porro? Repudiandae itaque debitis, dolorum veniam nobis aliquam recusandae repellat! Reprehenderit eius esse expedita perferendis laboriosam saepe, mollitia similique consequuntur labore odit quam architecto exercitationem adipisci perspiciatis fugit laudantium? Perferendis ratione dolorem facere blanditiis molestiae sint pariatur dolore soluta nobis sequi corrupti fugit fugiat ducimus animi velit, quod, distinctio maiores. Soluta perspiciatis nemo vel fuga ea qui recusandae a?'
+    
+    document.getElementById('para').innerText = fullParagraph; 
+}
