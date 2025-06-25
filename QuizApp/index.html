@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="quiz-container">    
+        <div id="quiz">
+            <h1>Quiz</h1>
+            <div id="question-container">
+                <p id="question">Loading question</p>
+            </div>
+            <div id="answer-buttons">
+                <button class="btn" onclick="nextQuestion('a')">Option A</button>
+                <button class="btn" onclick="nextQuestion('b')">Option B</button>
+                <button class="btn" onclick="nextQuestion('c')">Option C</button>
+                <button class="btn" onclick="nextQuestion('d')">Option D</button>
+            </div>
+            <div id="next-button" class="next-button">
+                <button class="btn" onclick="nextQuestion()">Next</button>
+            </div>
+        </div>
+        <div id="result" class="result">
+            <h2>Your Score: <span id="score">0</span> / <span id="totalScore">0</span></h2>
+            <button class="btn" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
