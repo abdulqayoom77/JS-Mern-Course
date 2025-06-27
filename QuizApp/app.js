@@ -175,6 +175,8 @@ function showResult() {
   document.getElementById("quiz").style.display = "none";
   document.getElementById("result").style.display = "block";
   document.getElementById("score").innerText = score;
+  localStorage.setItem('score', score)
+
 }
 
 function restartQuiz() {
@@ -182,6 +184,8 @@ function restartQuiz() {
   currentQuestionIndex = 0;
   document.getElementById("quiz").style.display = "block";
   document.getElementById("result").style.display = "none";
+  localStorage.clear()
 }
 
 loadQuestion();
+
