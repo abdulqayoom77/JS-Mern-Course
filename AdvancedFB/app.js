@@ -7,7 +7,7 @@ function execCaptionCommand(command) {
 }
 
 function toggleTextOverImage(checkbox) {
-  overlayInput.style.display = checkbox.checked ? 'block' : 'none'
+  overlayInput.style.display = checkbox.checked ? "block" : "none";
 }
 
 function justifyOverlayText(alignment) {
@@ -142,7 +142,7 @@ function renderPosts() {
     actions.appendChild(likeBtn);
 
     var likeCount = document.createElement("span");
-    likeCount.textContent = `${post.likes} like${post.likes === 1 ? "" : "s"}`;
+    likeCount.textContent = `${post.likes} like${post.likes === 0 ? "" : "s"} `;
     actions.appendChild(likeCount);
 
     postDiv.appendChild(actions);
@@ -180,9 +180,6 @@ function renderPosts() {
 
 renderPosts();
 
-
-
-
 // var obj = {
 //     name: 'sarwat'
 // }
@@ -190,16 +187,40 @@ renderPosts();
 // sessionStorage.setItem("name", JSON.stringify(obj))
 // console.log(JSON.parse(sessionStorage.getItem('name')))
 
-
-
-
-
 // var numbers = [1, 2, 3, 4, 5, 6];
 // var odd = numbers.filter(a => a % 2 !== 0 )
 // console.log(odd); // [2, 4, 6]
 
-
-
-
 // var arr = [1,2,3,4]
 // arr.forEach(elem => console.log(elem*2));
+
+var nme = `Sarwat Mustafa`;
+
+console.log(`My name is ${nme}`);
+
+// var input = document.createElement("input");
+// input.placeholder = "Write something...";
+// input.onkeydown = (keyObj) => {
+//   // if (e.key === "Enter") {
+//   //   addComment(post.id, input);
+//   // }
+
+//   console.log(keyObj.key)
+// };
+
+// var test = document.getElementById('test')
+
+// test.appendChild(input)
+
+// var arr = [4, 3, 1, 5];
+
+// var find2 = arr.find((p) => p < 5);
+// console.log(find2)
+
+
+
+
+var num1 = 2
+num1 += 2
+
+console.log(num1)
