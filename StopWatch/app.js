@@ -42,5 +42,6 @@ function reset() {
   hours = 0;
   minutes = 0;
   seconds = 0;
+  milliSeconds = 0;
   updateDisplay();
 }
