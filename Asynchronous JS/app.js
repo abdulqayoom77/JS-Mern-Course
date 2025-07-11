@@ -178,34 +178,44 @@ fetch("https://dummyjson.com/products")
   .then((res) => res.json())
   .then((data) => {
     let products = data.products;
+    console.log(products);
 
-    products.forEach(product => {
-        
-        // Make sure the container exists
-         const container = document.getElementById("product-container");
-    
-        const productDiv = document.createElement("div");
-    
-        productDiv.innerHTML = `
+    products.forEach((product) => {
+      // Make sure the container exists
+      const container = document.getElementById("product-container");
+
+      const productDiv = document.createElement("div");
+
+      productDiv.innerHTML = `
           <div class="product-header">
             <img src="${product.thumbnail}" alt="${product.title}" />
             <div class="product-info">
               <h2>${product.title}</h2>
               <p><strong>Brand:</strong> ${product.brand}</p>
-              <p><strong>Price:</strong> $${product.price} <small>(-${product.discountPercentage}% off)</small></p>
+              <p><strong>Price:</strong> $${product.price} <small>(-${
+        product.discountPercentage
+      }% off)</small></p>
               <p><strong>Rating:</strong> ${product.rating} ⭐</p>
-              <p><strong>Availability:</strong> ${product.availabilityStatus}</p>
-              <div><strong>Tags:</strong> ${product.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}</div>
+              <p><strong>Availability:</strong> ${
+                product.availabilityStatus
+              }</p>
+              <div><strong>Tags:</strong> ${product.tags
+                .map((tag) => `<span class="tag">${tag}</span>`)
+                .join(" ")}</div>
             </div>
           </div>
     
           <div class="reviews">
             <h3>Customer Reviews:</h3>
-            ${product.reviews.map(review => `
+            ${product.reviews
+              .map(
+                (review) => `
               <div class="review">
                 <span>${review.reviewerName}</span> (${review.rating}⭐): ${review.comment}
               </div>
-            `).join('')}
+            `
+              )
+              .join("")}
           </div>
     
           <div class="footer">
@@ -214,10 +224,64 @@ fetch("https://dummyjson.com/products")
             <p><strong>Return Policy:</strong> ${product.returnPolicy}</p>
           </div>
         `;
-    
-        container.appendChild(productDiv);
+
+      container.appendChild(productDiv);
     });
   })
-  .catch(error => {
+  .catch((error) => {
     console.error("Error fetching users:", error);
   });
+
+
+
+
+
+var arr = [1, 2,4,5,6,7,7,8,8]
+arr.forEach((i) => {
+  console.log(i);
+})
+
+
+
+
+
+
+// Print numbers from 1 to 10
+// ➤ Use a for loop to display numbers from 1 to 10 in the console.
+
+// Print all even numbers from 1 to 20
+// ➤ Modify your loop to only print even numbers.
+
+// Print the square of numbers from 1 to 5
+// ➤ Use a loop to calculate and print the square of each number from 1 to 5.
+
+// Iterate over an array of colors and print each one
+// ➤ Use a loop to go through an array like ["red", "green", "blue"] and print each color.
+
+// Calculate the sum of numbers from 1 to 100
+// ➤ Use a loop to calculate the total sum and print it.
+
+// Print each character of a string
+// ➤ Loop through the string "JavaScript" and print each character on a new line.
+
+// Display the multiplication table of 7 (up to 10)
+// ➤ Use a loop to print the table: 7 x 1 = 7 up to 7 x 10 = 70.
+
+// Calculate the factorial of a given number (e.g., 5)
+// ➤ Use a loop to compute 5! = 5 × 4 × 3 × 2 × 1.
+
+// Count how many times the letter "a" appears in a string
+// ➤ Given a string like "banana", count the occurrences of "a".
+
+// Print a right-angled triangle of stars
+// ➤ Output:
+
+// markdown
+// Copy
+// Edit
+// *
+// **
+// ***
+// ****
+// *****
+// Let me know if
