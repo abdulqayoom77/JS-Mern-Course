@@ -174,72 +174,72 @@
 // fetch
 // async await
 
-fetch("https://dummyjson.com/products")
-  .then((res) => res.json())
-  .then((data) => {
-    let products = data.products;
-    console.log(products);
+// fetch("https://dummyjson.com/products")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     let products = data.products;
+//     console.log(products);
 
-    products.forEach((product) => {
-      // Make sure the container exists
-      const container = document.getElementById("product-container");
+//     products.forEach((product) => {
+//       // Make sure the container exists
+//       const container = document.getElementById("product-container");
 
-      const productDiv = document.createElement("div");
+//       const productDiv = document.createElement("div");
 
-      productDiv.innerHTML = `
-          <div class="product-header">
-            <img src="${product.thumbnail}" alt="${product.title}" />
-            <div class="product-info">
-              <h2>${product.title}</h2>
-              <p><strong>Brand:</strong> ${product.brand}</p>
-              <p><strong>Price:</strong> $${product.price} <small>(-${
-        product.discountPercentage
-      }% off)</small></p>
-              <p><strong>Rating:</strong> ${product.rating} ⭐</p>
-              <p><strong>Availability:</strong> ${
-                product.availabilityStatus
-              }</p>
-              <div><strong>Tags:</strong> ${product.tags
-                .map((tag) => `<span class="tag">${tag}</span>`)
-                .join(" ")}</div>
-            </div>
-          </div>
+//       productDiv.innerHTML = `
+//           <div class="product-header">
+//             <img src="${product.thumbnail}" alt="${product.title}" />
+//             <div class="product-info">
+//               <h2>${product.title}</h2>
+//               <p><strong>Brand:</strong> ${product.brand}</p>
+//               <p><strong>Price:</strong> $${product.price} <small>(-${
+//         product.discountPercentage
+//       }% off)</small></p>
+//               <p><strong>Rating:</strong> ${product.rating} ⭐</p>
+//               <p><strong>Availability:</strong> ${
+//                 product.availabilityStatus
+//               }</p>
+//               <div><strong>Tags:</strong> ${product.tags
+//                 .map((tag) => `<span class="tag">${tag}</span>`)
+//                 .join(" ")}</div>
+//             </div>
+//           </div>
     
-          <div class="reviews">
-            <h3>Customer Reviews:</h3>
-            ${product.reviews
-              .map(
-                (review) => `
-              <div class="review">
-                <span>${review.reviewerName}</span> (${review.rating}⭐): ${review.comment}
-              </div>
-            `
-              )
-              .join("")}
-          </div>
+//           <div class="reviews">
+//             <h3>Customer Reviews:</h3>
+//             ${product.reviews
+//               .map(
+//                 (review) => `
+//               <div class="review">
+//                 <span>${review.reviewerName}</span> (${review.rating}⭐): ${review.comment}
+//               </div>
+//             `
+//               )
+//               .join("")}
+//           </div>
     
-          <div class="footer">
-            <p><strong>Shipping:</strong> ${product.shippingInformation}</p>
-            <p><strong>Warranty:</strong> ${product.warrantyInformation}</p>
-            <p><strong>Return Policy:</strong> ${product.returnPolicy}</p>
-          </div>
-        `;
+//           <div class="footer">
+//             <p><strong>Shipping:</strong> ${product.shippingInformation}</p>
+//             <p><strong>Warranty:</strong> ${product.warrantyInformation}</p>
+//             <p><strong>Return Policy:</strong> ${product.returnPolicy}</p>
+//           </div>
+//         `;
 
-      container.appendChild(productDiv);
-    });
-  })
-  .catch((error) => {
-    console.error("Error fetching users:", error);
-  });
-
-
+//       container.appendChild(productDiv);
+//     });
+//   })
+//   .catch((error) => {
+//     console.error("Error fetching users:", error);
+//   });
 
 
 
-var arr = [1, 2,4,5,6,7,7,8,8]
-arr.forEach((i) => {
-  console.log(i);
-})
+
+
+// var arr = [1, 2,4,5,6,7,7,8,8]
+// arr.forEach((i) => {
+//   console.log(i);
+// })
 
 
 
@@ -285,3 +285,11 @@ arr.forEach((i) => {
 // ****
 // *****
 // Let me know if
+
+
+
+
+
+
+
+
